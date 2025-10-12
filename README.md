@@ -1,55 +1,48 @@
-## OptiStocks- Where Money Meets Strategy
+# OptiStock 📈
+OptiStock is a smart stock-recommender platform that analyzes historical trends to suggest potential buy opportunities.  
+It combines financial logic with custom momentum indicators to help users discover promising stocks quickly.
 
-## Overview
+---
 
-Investment Advisor is a web-based tool designed for hackathons. It helps users allocate their budget across diversified stocks based on risk tolerance using real-time stock data.
+## 🚀 Features
+- Real-time stock search and visualization  
+- Custom algorithm based on **momentum and RSI analysis**  
+- Interactive dashboard for tracking multiple tickers  
+- API-driven backend for fetching and caching stock data  
+- Clean and responsive UI for an intuitive experience  
 
-## Features
+---
 
-- Budget allocation across mid-cap and S&P 500 stocks
-- Dynamic risk slider
-- Real-time stock data retrieval via Yahoo Finance
-- Backend: Flask API
-- Frontend: React with TypeScript
+## 🧰 Tech Stack
+**Backend:** Python (Flask), Pandas, Yahoo Finance API  
+**Frontend:** TypeScript, React, HTML, CSS  
+**Database:** SQLite / JSON storage (prototype)  
+**Deployment:** Dockerized backend + frontend containers  
 
-## Tech Stack
+---
 
-- **Backend**: Flask, Flask-CORS, yfinance, pandas
-- **Frontend**: React, TypeScript, Tailwind CSS
+## 🧩 System Overview
+1. User selects or searches for stocks  
+2. Backend retrieves data via the Yahoo Finance API and applies custom scoring logic  
+3. Recommendations are ranked by computed momentum indicators  
+4. Frontend displays real-time charts and scores through REST API calls  
 
-## Getting Started
+---
 
-### Prerequisites
+## 🧠 Learning & Development Notes
+- Implemented the project to explore **data-driven decision systems** and API integration.  
+- Experimented with various weighting schemes for stock momentum and volatility.  
+- Used Docker for consistent environment setup and easy deployment.  
+- Learned how to design and consume RESTful APIs across backend and frontend.  
 
-- Python 3.9+
-- Node.js 16+
-- npm or yarn
+---
 
-### Installation
+## 💡 Future Improvements
+- Add ML-based prediction models for enhanced accuracy  
+- Integrate real-time news sentiment analysis  
+- Implement authentication and personalized dashboards  
+- Store data in a scalable cloud database (e.g., Firestore or PostgreSQL)
 
-1. **Clone the repository**:
-   ```bash
-   git clone <repository_url>
-   cd <repository_folder>
+---
 
-2. **Backend Setup:**
-   ```bash
-   cd cheesybackend
-   python3 -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   pip3 install Flask flask-cors yfinance pandas tqdm
-
-3. **Frontend Setup:**
-   ```bash
-   cd cheesyfrontend
-   npm install
-
-4. **Start the Backend:**
-   ```bash
-   python3 stockSelectorFunction.py
-
-5. **Start the Frontend:**
-   ```bash
-   npm run dev
-
-Note: The python file and the frontend should be running at the same time.
+> *Created to combine our interests in economics, data analysis, and software engineering.*
